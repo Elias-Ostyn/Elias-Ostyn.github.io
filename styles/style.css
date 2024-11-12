@@ -2,13 +2,37 @@ header h1{
     text-align: center;
     font-family: Apple Chancery, cursive;
     background-color: #2B2D42;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 1.5em;
     color: white;
+    font-size: 2em  ;
 
 
 
 }
 body{
     margin-top: 0px;
+    text-align:center;
+}
+
+li:hover a {
+    color:#3739ff;
+}
+a{
+    text-decoration: none;
+    color: #2B2D42;
+}
+ul {
+    list-style-type: none;
+
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 15px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #e0e0e0; /* Light border around the box */
+    font-size: 1.5em;
+}
+
+li {
+    margin: 10px 0;
 }
