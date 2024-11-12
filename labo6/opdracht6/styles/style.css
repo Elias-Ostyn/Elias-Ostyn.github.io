@@ -1,0 +1,23 @@
+/* Basisstyling voor de checklist */
+.checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Gemeenschappelijke styling voor de lijstitems */
+.checklist li {
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;  /* Extra ruimte voor het icoon */
+}
+
+/* Icoon voor niet-aangevinkte items */
+.checklist li {
+    background-image: url('../img/unchecked.png'); /* Pad naar niet-aangevinkte afbeelding */
+}
+
+/* Icoon voor aangevinkte items */
+.checklist li.checked {
+    background-image: url('../img/checked.png'); /* Pad naar aangevinkte afbeelding */
+}
