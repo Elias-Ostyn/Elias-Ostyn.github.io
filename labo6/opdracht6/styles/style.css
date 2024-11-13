@@ -1,23 +1,17 @@
-/* Basisstyling voor de checklist */
 .checklist {
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
 }
 
-/* Gemeenschappelijke styling voor de lijstitems */
 .checklist li {
-    padding-left: 24px;
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;  /* Extra ruimte voor het icoon */
+    padding-left: 1.5em;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
 }
 
-/* Icoon voor niet-aangevinkte items */
-.checklist li {
-    background-image: url('../img/unchecked.png'); /* Pad naar niet-aangevinkte afbeelding */
-}
-
-/* Icoon voor aangevinkte items */
-.checklist li.checked {
-    background-image: url('../img/checked.png'); /* Pad naar aangevinkte afbeelding */
+.checklist img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
