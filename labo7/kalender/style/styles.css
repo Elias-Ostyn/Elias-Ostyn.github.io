@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-size: 2em;
+}
+
+.calendar {
+    border-collapse: collapse;
+    text-align: center;
+    width: 300px;
+    border: 5px solid black;
+}
+.dagen{
+    background-color: rgb(35,37,70) ;
+    color:rgb(200,190,240) ;
+    font-weight: bold;
+}
+.maand{
+    background-color: rgb(170,170,200);
+}
+.specialeDag {
+    background-color: rgb(250, 120, 120);
+}
+/*dit is om je border te maken rond je tabellen*/
+.calendar td, .calendar th {
+    width: 40px;
+    height: 40px;
+    border: 3px  dotted black;
+    padding: 5px;
+}
+/* dagen van de vorige maand en volgende maant int grijs */
+.calendar tr:nth-child(3) td:first-child, /* 30ste */
+.calendar tr:nth-last-child(1) td:nth-child(n+5) { /* 1 ,2 en 3  juli */
+    background-color: gray;
+    color: lightgray;
+}
+.calendar tr td:first-child, /* Zondag */
+.calendar tr td:last-child { /* Zaterdag */
+    background-color: rgb(255, 220, 220);
+}
