@@ -1,0 +1,51 @@
+.vriendentabel {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.vriendentabel th {
+    background-color: #a10d0d;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.vriendentabel td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.vriendentabel tbody tr:nth-child(even) {
+    background-color: #f8d9d9;
+}
+
+.vriendentabel tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.vriendentabel tbody tr:hover {
+    background-color: #f2b8b8;
+}
+
+/* Specifieke selector om conflicten te voorkomen */
+.vriendentabel tbody tr.alt td.onbekend {
+    background-color: red;
+}
+
+.vriendentabel td.onbekend {
+    background-color: red;
+}
+
+.vriendentabel .pagination {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.vriendentabel .pagination a {
+    color: white;
+    background-color: #a10d0d;
+    padding: 5px 10px;
+    text-decoration: none;
+}
