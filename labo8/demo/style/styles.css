@@ -1,0 +1,46 @@
+body{
+    background-color: silver;
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    float: left;
+    width: 20%;
+    background-color: white;
+    height: 200px;
+}
+section#midden{
+    float: left;
+    background-color: maroon;
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+footer{
+    clear: both;
+    text-align: center;
+    background-color: greenyellow;
+    height: 120px;
+}
+nav a{
+    text-decoration: none;
+}
+.breedte{
+    width: 400px;
+    background-color: green;
+    margin: 20px;
+    padding: 20px;
+}
