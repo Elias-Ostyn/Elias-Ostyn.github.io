@@ -10,8 +10,8 @@ body{
     text-align: center;
     background: url("../images/bgsky3.jpg") no-repeat;
     background-size: cover;
-    position: relative; /nodig om image v vliegtuig absoluut te positioneren tot dit element/
-color: darkblue;
+    position: relative;
+    color: darkblue;
 
 }
 #top > h1 {
@@ -104,23 +104,35 @@ main.main {
     object-fit: cover;
 }
 
-
-
-
 #bottom {
     background-color: #666666;
     color: white;
-    line-height: 2em;
     display: flex;
     flex-direction: column;
+
 }
 
-#block1,#block2 {
-    padding-left: 120px;
-    width: 50%;
-    display: block;
+
+.buttonul-container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
+.buttonul {
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.copyright {
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px; /* Zorg voor ruimte boven de copyright */
+}
 
 a {
     color: white;
@@ -130,10 +142,5 @@ a {
 a:hover {
     color: red;
 }
-.copyright {
-    text-align: center;
-    background-color: white;
-    color: black;
-    width: 100%;
 
-}
+
