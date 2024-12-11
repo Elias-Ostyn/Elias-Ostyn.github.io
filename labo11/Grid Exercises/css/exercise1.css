@@ -1,0 +1,19 @@
+.container{
+    background-color: cornflowerblue;
+    display: grid;
+    /*maak ne grid container dit bevat grid items die worden geplaatst in collumns and rows*/
+    /* als  je ze gelijk wilt auto auto auto*/
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    /* 25% 50% 25%*/
+    grid-gap: 20px;
+    /*dus de tussenruimte tussen de cellen*/
+}
+
+.container .block{
+    margin:50px;
+    padding:50px;
+    background-color: white;
+
+}
+
