@@ -1,0 +1,162 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/** algemene settings **/
+
+body{
+    font-family: helvetica sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/** Header **/
+header{
+    width: 600px;
+
+}
+.headerimg{
+    justify-content: center;
+    height: 50px;
+    border-bottom: #ebe8e8 solid 1px;
+
+}
+
+/** Nav **/
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-rows: auto;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #5b4746;
+    font-size: 13px;
+    width: 600px;
+}
+nav ul li:not(:last-child) a {
+    border-right: 1px solid #ebe8e8; /* Grijze lijn aan de rechterkant, behalve voor het laatste item */
+}
+nav a:hover{
+    text-decoration: underline 2px #fff100;
+
+}
+
+/** main **/
+
+.mainheader{
+    background-image: url("../images/headerimage.jpg");
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainheader p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 2px 2px #8D99AE;
+}
+
+
+.smallTitle{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: red;
+}
+article h2 a {
+    text-decoration: none;
+    color: black;
+}
+.itembody{
+    color: darkgray;
+    line-height: 2;
+
+}
+.auteur{
+    padding-right: 10px;
+    border-right: 1px #ebe8e8;
+    font-style: italic;
+    display: inline;
+}
+.timestamps{
+    display: inline;
+    padding-left: 10px;
+    color: #666666;
+}
+/** grid maken voor de img en tekst recipes**/
+
+.res article{
+    margin-right: 1.5em;
+    padding: 1em;
+    border-top: 1px solid gray;
+}
+.res{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+
+}
+.foto{
+    padding-top: 15px;
+}
+.sovares{
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    width: 600px;
+}
+.recfy{
+    margin-top: 50px;
+    width: 600px;
+}
+.sortfoto{
+    padding-bottom: 25px;
+}
+/** Media query **/
+@media screen and(min-width:770px) {
+    header{
+        width: 750px;
+    }
+    .mainRecipes{
+        width: 750px;
+    }
+    .sovares{
+        width: 750px
+    }
+
+}
+@media screen and(min-width:1000px) {
+    header{
+        width:980px;
+    }
+    .mainRecipes{
+        width: 980px;
+    }
+    .sovares{
+        width: 980px
+    }
+}
+@media screen and(min-width:800px) {
+    .mainheader p {
+        font-size: 5em;
+    }
+}
