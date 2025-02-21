@@ -1,0 +1,12 @@
+
+ul.zonder-bollekes li {
+    list-style-type: none;
+    background-color: red; /* Voeg je gewenste achtergrondkleur hier in */
+    color: black;
+}
+
+ul.met-bollekes li {
+    list-style-type: disc;
+    background-color: blue;
+    color: black;
+}
