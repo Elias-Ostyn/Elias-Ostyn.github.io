@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title></title>
+</head>
+<body>
+<h2>Formulier Elementen</h2>
+
+<form action="" method="post">
+    <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First name*:</label>
+            <input type="text" id="first-name" placeholder="Your first name"><br>
+
+            <label for="last-name">Last name*:</label>
+            <input type="text" id="last-name" placeholder="Your last name">
+    </fieldset>
+
+    <fieldset>
+            <legend>Gender</legend>
+
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label><br>
+
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label><br>
+
+            <label>
+                <input type="radio" name="gender" value="other"> Other / Prefer not to say
+            </label>
+
+    </fieldset>
+
+    <fieldset>
+            <legend>Favorites</legend>
+
+            <label for="fav-music">Favorite music:</label>
+            <input type="text" id="fav-music" placeholder="Enter your favorite music">
+
+            <label for="fav-quote">Favorite quote:</label>
+            <input type="text" id="fav-quote" placeholder="Write your favorite quote">
+
+            <label for="fav-food">Favorite food:</label>
+            <select id="fav-food">
+                <option value="burger">Hamburger</option>
+                <option value="hotdog">Hot Dog</option>
+                <option value="pizza">Pizza</option>
+            </select>
+
+            <label for="fav-flavor">Choose a flavor:</label>
+            <input type="text" id="fav-flavor" placeholder="Enter your favorite flavor">
+    </fieldset>
+
+    <fieldset>
+        <legend>Security & Contact</legend>
+
+        <label for="password">Password*:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <label for="email">Email address*:</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label for="fav-site">Favorite site:</label>
+        <input type="url" id="fav-site" placeholder="Enter the URL of your favorite site">
+    </fieldset>
+
+    <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="fav-number">Favorite number (1-10):</label>
+            <input type="number" id="fav-number" min="1" max="10">
+
+            <label for="big-fav-number">Favorite number (1-1000):</label>
+            <input type="range" id="big-fav-number" min="1" max="1000">
+            <span id="range-value">500</span>
+
+
+        <label for="birthdate">When were you born?</label>
+            <input type="date" id="birthdate">
+
+            <label for="zip-code">belgium zip-code reg number*:</label>
+            <input type="text" id="zip-code" placeholder="Enter zip-code">
+    </fieldset>
+    <fieldset>
+            <legend>Miscellaneous</legend>
+
+            <label for="search">Search for something:</label>
+            <input type="text" id="search" placeholder="Type here...">
+
+            <label for="fav-color">What is your favorite color?</label>
+            <input type="color" id="fav-color">
+            <div id="color-preview"></div>
+
+
+        <label for="upload-file">Upload a file:</label>
+            <input type="file" id="upload-file">
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>
