@@ -1,0 +1,10 @@
+.errorMessage {
+	color: red;
+	font-size: 12px; /* Kleinere foutmelding voor betere leesbaarheid */
+	margin-left: 5px; /* Kleine marge voor nette uitlijning */
+}
+
+input.invalid {
+	border: solid 2px red; /* Iets dikkere rand voor betere zichtbaarheid */
+	background-color: #ffcccc; /* Lichte rode achtergrond om fouten te markeren */
+}
