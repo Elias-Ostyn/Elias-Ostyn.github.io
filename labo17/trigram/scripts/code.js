@@ -1,15 +1,23 @@
 const setup = () => {
+    let btnGenereer = document.getElementById("btnGenereer");
+    btnGenereer.addEventListener("click", genereerTrigrammen);
+};
 
-    let s1 = "onoorbaar"
-    console.log(s1.slice(0,3))
-    console.log(s1.slice(1,4))
-    console.log(s1.slice(2,5))
-    console.log(s1.slice(3,6))
-    console.log(s1.slice(4,7))
-    console.log(s1.slice(5,8))
-    console.log(s1.slice(6,9))
+const genereerTrigrammen = () => {
+    let inputField = document.getElementById("txtInput");
+    let tekst = inputField.value.trim();
 
+    if (tekst.length < 3) {
+        document.getElementById("output").textContent = "De invoer moet minstens 3 tekens bevatten.";
+        return;
+    }
 
+    let trigrammen = [];
+    for (let i = 0; i <= tekst.length - 3; i++) {
+        trigrammen.push(tekst.slice(i, i + 3));
+    }
 
-}
+    document.getElementById("output").textContent = trigrammen.join(", ");
+};
+
 window.addEventListener("load", setup);
