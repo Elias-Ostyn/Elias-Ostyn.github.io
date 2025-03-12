@@ -81,7 +81,7 @@ const valideer = () => {
 	let email = txtEmail.value.trim();
 	let emailArray = email.split("@");
 
-// Controleer of er meer dan één @-teken is
+// Controle email
 	if (emailArray.length > 2) {
 		txtEmail.className = "invalid";
 		errEmail.innerHTML = "er mag maar 1 @ teken in je mail staan";
@@ -114,7 +114,7 @@ const valideer = () => {
 		} else if (aantalKinderen < 0) {
 			errAantalKinderen.innerHTML = "Het aantal kinderen mag niet negatief zijn";
 		} else if (aantalKinderen > 99) {
-			errAantalKinderen.innerHTML = "Max. 99 kinderen";
+			errAantalKinderen.innerHTML = "te vruchtbaar";
 		}
 		allValid = false;
 	} else {
@@ -124,7 +124,7 @@ const valideer = () => {
 
 	// valid popup
 	if (allValid) {
-		alert("Proficiat! Alle velden zijn correct ingevuld.");
+		alert("Proficiat! Alle velden zijn goed ingevuld.");
 	}
 };
 
