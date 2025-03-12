@@ -23,7 +23,7 @@ const antellenLastIndex = (text, search) => {
 };
 
 const setup = () => {
-    let button = document.getElementById("antellen"); 
+    let button = document.getElementById("antellen");
     let tekst = "De man van An geeft geen hand aan ambetante verwanten";
 
     button.addEventListener("click", () => {

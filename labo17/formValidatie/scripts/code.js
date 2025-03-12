@@ -52,6 +52,7 @@ const valideer = () => {
 		errGeboortedatum.innerHTML = "";
 	}
 
+
 	// Validatie email
 	let txtEmail = document.getElementById("txtEmail");
 	let errEmail = document.getElementById("errEmail");
@@ -70,12 +71,15 @@ const valideer = () => {
 		errEmail.innerHTML = "";
 	}
 
+
+
 	// Validatie aantal kinderen
 	let txtAantalKinderen = document.getElementById("txtAantalKinderen");
 	let errAantalKinderen = document.getElementById("errAantalKinderen");
 	let aantalKinderen = txtAantalKinderen.value.trim();
 
-	// Check if the field is not empty and validate the number
+
+
 	if (aantalKinderen && (isNaN(aantalKinderen) || aantalKinderen < 0 || aantalKinderen > 99)) {
 		txtAantalKinderen.className = "invalid";
 		if (isNaN(aantalKinderen)) {
@@ -91,7 +95,7 @@ const valideer = () => {
 		errAantalKinderen.innerHTML = "";
 	}
 
-	// If all fields are valid, show the congratulatory message
+	// valid popup
 	if (allValid) {
 		alert("Proficiat! Alle velden zijn correct ingevuld.");
 	}

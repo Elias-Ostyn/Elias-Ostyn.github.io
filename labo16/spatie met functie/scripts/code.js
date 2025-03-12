@@ -1,4 +1,5 @@
 const setup = () => {
+
     const spatie = (inputText) => {
         let result = "";
         for (let i = 0; i < inputText.length; i++) {
