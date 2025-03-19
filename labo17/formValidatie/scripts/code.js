@@ -16,6 +16,8 @@ const setup = () => {
 			errVoornaam.innerHTML = "";
 		}
 
+
+
 		// Validatie familienaam
 		const txtFamillieNaam = document.getElementById("txtfamillieNaam");
 		const errFamillieNaam = document.getElementById("errfamillieNaam");
@@ -32,6 +34,8 @@ const setup = () => {
 			txtFamillieNaam.className = "";
 			errFamillieNaam.innerHTML = "";
 		}
+
+
 
 		// Validatie geboortedatum
 		const txtGeboortedatum = document.getElementById("txtGeboortedatum");
@@ -64,6 +68,8 @@ const setup = () => {
 			errGeboortedatum.innerHTML = "";
 		}
 
+
+
 		// Validatie email
 		const txtEmail = document.getElementById("txtEmail");
 		const errEmail = document.getElementById("errEmail");
@@ -87,6 +93,8 @@ const setup = () => {
 			errEmail.innerHTML = "";
 		}
 
+
+
 		// Validatie aantal kinderen
 		const txtAantalKinderen = document.getElementById("txtAantalKinderen");
 		const errAantalKinderen = document.getElementById("errAantalKinderen");
@@ -107,6 +115,8 @@ const setup = () => {
 			errAantalKinderen.innerHTML = "";
 		}
 
+
+		
 		// Validatie popup
 		if (allValid) {
 			alert("Proficiat! Alle velden zijn goed ingevuld.");
