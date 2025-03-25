@@ -39,3 +39,60 @@
 </section>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kip of Ei</title>
+    <style>
+        img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<label>
+    <input type="checkbox" id="chkKip"> Kip
+</label>
+<label>
+    <input type="checkbox" id="chkEi"> Ei
+</label>
+
+<img id="imgResultaat" src="" alt="">
+
+<script>
+    const setup = () => {
+        const chkKip = document.getElementById("chkKip");
+        const chkEi = document.getElementById("chkEi");
+        const imgResultaat = document.getElementById("imgResultaat");
+
+        const updateAfbeelding = () => {
+            if (chkKip.checked) {
+                imgResultaat.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hen_1090603.jpg/320px-Hen_1090603.jpg";
+                imgResultaat.alt = "Kip";
+                chkEi.checked = false; // Deactiveer de andere checkbox
+            } else if (chkEi.checked) {
+                imgResultaat.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Chicken_egg_-_whole_and_split.jpg/320px-Chicken_egg_-_whole_and_split.jpg";
+                imgResultaat.alt = "Ei";
+                chkKip.checked = false;
+            } else {
+                imgResultaat.src = "";
+                imgResultaat.alt = "";
+            }
+        };
+
+        chkKip.addEventListener("change", updateAfbeelding);
+        chkEi.addEventListener("change", updateAfbeelding);
+    };
+
+    window.addEventListener("load", setup);
+</script>
+
+</body>
+</html>

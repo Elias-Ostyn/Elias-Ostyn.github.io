@@ -116,7 +116,7 @@ const setup = () => {
 		}
 
 
-		
+
 		// Validatie popup
 		if (allValid) {
 			alert("Proficiat! Alle velden zijn goed ingevuld.");
