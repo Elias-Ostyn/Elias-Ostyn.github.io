@@ -1,0 +1,26 @@
+img {
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tafel {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tafel-rij {
+    padding: 5px;
+}
+
+.even {
+    background-color: #f0f0f0;
+}
