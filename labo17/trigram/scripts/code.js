@@ -20,4 +20,3 @@ const genereerTrigrammen = () => {
     document.getElementById("output").textContent = trigrammen.join(", ");
 };
 
-window.addEventListener("load", setup);

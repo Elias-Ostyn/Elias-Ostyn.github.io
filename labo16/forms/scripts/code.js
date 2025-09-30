@@ -1,5 +1,7 @@
 const setup = () => {
 
+    document.getElementById("first-name").focus();
+
     // die slider voor getal errnaast te tonen
     let rangeSlider = document.getElementById("big-fav-number");
     let rangeValue = document.getElementById("range-value");
